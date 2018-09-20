@@ -2,6 +2,10 @@ meta {
     display: none;
 }
 
+@media only screen and (min-width: 48em)
+html {
+    font-size: 110%;
+}
 .row {
   display:flex
 }
