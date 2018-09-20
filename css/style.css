@@ -1,21 +1,21 @@
+html {
+  font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
 meta {
     display: none;
 }
 
-@media only screen and (min-width: 48em)
-html {
-    font-size: 110%;
-}
 .row {
   display:flex
 }
 .col {
   flex:1
 }
-@media(max-width:48em){
+@media(max-width:48rem){
   .row{flex-direction:column}
   .col{flex:0 0 auto}}
-@media(min-width:48em){
+@media(min-width:48rem){
   .col-tenth{flex:0 0 10%}
   .col-fifth{flex:0 0 20%}
   .col-quarter{flex:0 0 25%}
@@ -134,6 +134,7 @@ a.button {
   color: white;
   font-size: 1rem;
   text-align: center;
+  margin-top:1rem;
 }
 
 .header-button {
