@@ -29,10 +29,14 @@ meta {
   .col-fivish{flex:0 0 41.66666667%}
   .col-half{flex:0 0 50%}
   .col-sevenish{flex:0 0 58.33333333%}
+  .col-twothird{flex:0 0 66.66666667%}
   #specialty-text {
     padding-right: 2rem;
+    margin-bottom: 10rem;
   }
-
+  .specialties {
+    margin-bottom: -10rem;
+  }
 }
 
 /* ANIMATIONS */
@@ -129,6 +133,27 @@ h5 {
   animation: fadein 3s;
 }
 
+.card {
+  min-height: 24rem;
+}
+
+.case-card {
+  display: flex;
+  background-color: white;
+  color: #4A4A4A;
+  padding: 2rem;
+}
+#card-content {
+  display: flex;
+  align-items: center;
+}
+.case-pic {
+  background-repeat: no-repeat;
+  background-image: url(case-1@2x.jpg);
+  background-position: center top;
+  background-size: 140%;
+}
+
 /* .profile-card::before {
   content: '';
   display: block;
@@ -160,17 +185,25 @@ a.button {
 
 a.button:hover {
   color: black;
-  background-color: white;
-  /* border: solid .25rem transparent;
-  background-image: linear-gradient(90deg, #804CEB, #4757F2); */
+  background-color: white;}
+
+#primary-button {
+  margin: 0 0;
+  /* background-image: linear-gradient(90deg, #804CEB, #4757F2);
+  border: none;
+  padding: 2em 2.5em;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem; */
 }
 
 .header-button {
   width: 10rem;
   padding: .5rem 1rem;
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-right: 1rem;
 }
+
 
 .heading {
   margin: 2rem auto;
