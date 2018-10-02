@@ -5,3 +5,7 @@ $(window).scroll(function () {
         $('.hero-pic').fadeOut();
     }
 });
+
+$('.trigger, .slider').click(function() {
+  $('.slider').toggleClass('close');
+});
