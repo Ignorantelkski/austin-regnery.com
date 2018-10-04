@@ -6,6 +6,6 @@ $(window).scroll(function () {
     }
 });
 
-$('.trigger, .slider').click(function() {
-  $('.slider').toggleClass('close');
+$('.trigger').click(function() {
+  $('.about-me, .home-page').toggleClass('hide');
 });
