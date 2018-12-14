@@ -16,10 +16,6 @@ meta {
 @media(max-width:70rem){
   .row{flex-direction:column}
   .col{flex:0 0 auto}
-  .specialty-pic {
-    display: block;
-    margin: 10rem 0 0 0;
-  }
 }
 @media(min-width: 70rem){
   .col-tenth{flex:0 0 10%}
@@ -30,10 +26,6 @@ meta {
   .col-half{flex:0 0 50%}
   .col-sevenish{flex:0 0 58.33333333%}
   .col-twothird{flex:0 0 66.66666667%}
-  #specialty-text {
-    padding-right: 1rem;
-    margin-bottom: 8rem;
-  }
   .specialties {
     margin-bottom: -10rem;
   }
@@ -45,8 +37,6 @@ meta {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
-
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -81,8 +71,24 @@ h6 {
   font-weight: 300;
   line-height: 1.8rem;
 }
+
 a {
   color: white;
+}
+
+.specialty-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#center-text{
+  text-align:center;
+}
+
+#specialty-text {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 8rem;
 }
 
 .container {
@@ -95,10 +101,9 @@ a {
 }
 
 .hero-pic {
-  display: none;
-
   margin: 0 auto;
   width: 100%;
+  /* opacity: 0; */
 }
 
 .headshot{
@@ -290,4 +295,13 @@ a.button:hover {
 #black-box {
   background-color: black;
   margin: 1rem auto;
+}
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
