@@ -1,17 +1,12 @@
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
-    //     $('.hero-pic').fadeIn();
-    // } else {
-    //     $('.hero-pic').fadeOut();
-    // }
-    // $('.hero-pic').attr("style", "animation: fadein 3s");
-    // } else {
-    // $('.hero-pic').attr("style", "animation: fadeout 3s");
-    }
+
+$('.about-trigger').click(function() {
+  $('.about-me, .home-page').toggleClass('hide');
+  $('body').toggleClass('border');
 });
 
-$('.trigger').click(function() {
-  $('.about-me, .home-page').toggleClass('hide');
+$('.case-1-trigger').click(function() {
+  $('.shield, .home-page').toggleClass('hide');
+  $('body').toggleClass('border');
 });
 
 $(function() {
