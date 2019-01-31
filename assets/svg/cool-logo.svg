@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="273px" height="536px" viewBox="0 0 273 536" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>cool-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="202" y="466" width="50" height="50"></rect>
+        <filter x="-60.0%" y="-60.0%" width="220.0%" height="220.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="austin-regnery.com" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page---Redesign" transform="translate(-517.000000, -117.000000)" fill-rule="nonzero">
+            <g id="Hero" transform="translate(0.000000, 108.000000)">
+                <g id="Graphic" transform="translate(518.000000, 9.000000)">
+                    <g id="cool-logo">
+                        <polyline id="Path" stroke="#6C6B70" stroke-linecap="square" points="0 0 0 491 226 491"></polyline>
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M218.138216,493.485168 L218.138216,489.199454 L216.138216,489.199454 L216.138216,493.485168 L218.138216,493.485168 Z M219.138216,488.342311 L236.138216,488.342311 L238.138216,491.342311 L236.138216,494.342311 L219.138216,494.342311 L215.138216,494.342311 L215.138216,488.342311 L219.138216,488.342311 Z M219.138216,489.199454 L219.138216,493.485168 L235.557893,493.485168 L236.986465,491.342311 L235.557893,489.199454 L219.138216,489.199454 Z" id="Combined-Shape" fill="#26252C" transform="translate(226.638216, 491.342311) rotate(122.000000) translate(-226.638216, -491.342311) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
