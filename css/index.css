@@ -355,5 +355,19 @@ FOOTER
     margin-left: 35%;
 }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+SECTIONS
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+section {
+  opacity: 0;
+  transition: opacity 1s;
+  transform: translate(0, 20px); 
+  transition: all 1s;
+}
+
+section.visible { 
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 
