@@ -36,6 +36,7 @@ html {
 * {
     box-sizing: boerder-box;
     color: var(--text-color);
+    font-family: 'Teko', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
