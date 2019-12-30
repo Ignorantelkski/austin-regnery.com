@@ -450,9 +450,9 @@ a:active, a:hover {
     .floater {
         float:left;
     }
-    /* .profile-pic {
+    .profile-pic {
         margin-left: 248px;
-    } */
+    }
     .setup-pic {
         display: block;
         max-width: 1440px;
