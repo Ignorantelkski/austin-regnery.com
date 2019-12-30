@@ -11,7 +11,7 @@
         </script>
 
         <meta charset="utf-8">
-        <title>Austin Regnery | Product Designer</title>
+        <title>Austin Regnery | UX</title>
         <meta name="author" content="Austin Regnery">
         <meta name=“description” content="Hey, I'm Ausitn 👋 I currently design applications at Boeing that impact people's lives, and I love what I do.">
 
@@ -20,9 +20,12 @@
 
         <!-- CSS -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata:400,700%7CVollkorn:400,400italic,700,700italic%7CLato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CNeuton:regular,700,800%7CNunito:regular%7CTeko:regular,500%7CArchivo+Black:regular" media="all">
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="assets/fonts/node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
         
 
         <!-- FAV ICON -->
@@ -44,294 +47,215 @@
     </head>
 
     <body>
-            <div class="top-spacer-l"></div>  
+        <!-- NAVIGATION -->
+        <div class="topbar">
+            <div class="topbar-home-text"><a href="/">austin regnery</a></div>
+            <div class="menu-wrap">
+                    <input type="checkbox" class="toggler" id="toggle">
+                    <div class="hamburger"><div></div></div>               
+            </div>
+        </div>
+        <div class="menu opened">
+                <ul>
+                    <li><a href="http://www.austin-regnery.com">Home</a></li>
+                    <li><a href="https://medium.com/@acregnery">Writings</a></li>
+                    <li><a href="https://github.com/Ignorantelkski">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/austin-regnery/">LinkedIn</a></li>
+                    <li><a href="assets/pdf/Austin-Regnery-Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+        </div>
 
-            <!-- Main Header [start] -->
-            <div class="container">
-                <div class="row">
-
-                    <img class="hero-line" src="assets/svg/cool-logo.svg" alt="">
-                    <div class="header-title-small-left three columns">
-                        <h2><a href="http://www.austin-regnery.com/">Austin Regnery</a></h2>
+        <!-- HERO -->
+        <div class="container">
+            <div class="row">
+                <div class="home-header-hero">
+                    <h1>Product <span class="outlined">Designer</span>,<br> Mentor,<br> &amp; Minimalist @ &lt;3</h1>
+                </div>
+                <div class="horz-small-line"></div>
+                <div class="home-header-desc">
+                    <p>I design applications that impact people's lives, and I love what I do.</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://medium.com/@acregnery" target="_blank" class="social-links"><i class="fab fa-medium-m"></i></a>
+                    <a href="https://github.com/Ignorantelkski" target="_blank" class="social-links"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/austin-regnery/" target="_blank" class="social-links"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="hero-img"><img src="assets/jpg/hero-img.jpg"></div>
+                <div class="x-line">
+                    <div class="center">
+                        <img src="https://uploads-ssl.webflow.com/5b0eb11723332d2455b73469/5b913a118854430d1d59670a_x.svg" data-w-id="905eb075-bfd0-bd13-2bd9-7877be0e3bee" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" alt="" class="x-mark">
+                        <img src="https://uploads-ssl.webflow.com/5b0eb11723332d2455b73469/5b913a51b07f22c423841fab_vertical-line.svg" data-w-id="83a5382e-03af-7ed4-eea3-d02e208a3d83" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" alt="" class="vert-small-line">
                     </div>
-    
-                    <div class="header-title-small-right four columns offset-by-two">
-                        <h2>─ I wake up every day excited to discover creative solutions and teach others how to do the same.</h2>
-                    </div>
-    
-                    <div id="menu" class="menu one column u-pull-right">
-                        <ul>
-                            <li><a href="http://www.austin-regnery.com">Home</a></li>
-                            <li><a href="https://medium.com/@acregnery">Writings</a></li>
-                            <li><a href="https://github.com/Ignorantelkski">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/austin-regnery/">LinkedIn</a></li>
-                            <li><a href="assets/pdf/Austin-Regnery-Resume.pdf" target="_blank">Resume</a></li>
-                        </ul>
-                    </div>
-    
                 </div>
             </div>
-            <!-- Main Header [end] -->
-        
-            <!-- Hero Section [start] -->
-            <div class="container">
-                <div class="row">
-    
-                    <div class="hero-title six columns">
-                        <h1>Product <span class="outlined">Designer</span>,<br> Mentor,<br> & Minimalist @ <3</h1>
-                        <br>
-                        <h2 class="eight columns">I design applications that impact people's lives, and I love what I do.</h2>
-                    </div>
-    
-                    <img class="hero-pic" src="assets/jpg/hero-img.jpg">
-    
-                </div>
+        </div>
+
+        <!-- BRIEF -->
+        <section class="container">
+            <div class="home-header-about center">
+                <p class="home-header-about-paragraph"><strong class="invert">I wake up every day excited to discover creative solutions and teach others how to do the same.</strong><br>I specialize in discovering user needs and turning them into designs that are productive, minimal, and human.</p>
+                <p class="home-header-about-paragraph"><strong class="invert">I am reshaping software development culture by demonstrating the value of design on product teams.</strong><br>You can check out what my team has accomplished and where we are headed next <a href="https://www.information-age.com/boeings-digital-transformation-cultural-123476508" class="invert">here</a>.</p>
             </div>
-    
-            <div class="overflow">
-                <a class="about-trigger hero-button" href="#jump">tell me more </a>
-            </div>  
-            <!-- Hero Section [end] -->
-        
-            <!-- Section 1 [start] -->
-            <section class="container">
-                    <div class="row">
-        
-                        <div class="five columns offset-by-five hero-img-text">
-                            <p>Currently, I am helping reshape the culture at a large aerospace company, by demonstrating the value of design on product teams. I have several case studies that exemplify this effort which are pending approval for public release. Fingers crossed.🤞</p>
-                            <br>
-                            <div class="special"><p>You can check out what my team has accomplished <a href="https://www.information-age.com/boeings-digital-transformation-cultural-123476508">here</a>.</p></div>
-                        </div>
-                        
-                    </div>
-            </section>
-            <!-- Section 1 [end] -->
-
-            <div class="top-spacer-xl"></div>
-
-            <!-- Section 2 [start] -->
-            <section class="container">
-                <div class="hero-title six columns">
-                    <h1>I’ve picked up a few things along my journey.</h1>
-                    <br>
-                    <h2>There are a number of ways that I show up and add value, but here is a concise list of the accountabilities that I own in my job in no specific order.</h2>
+        </section>
+        <div class="container">
+            <div class="x-line">
+                <div class="center">
+                        <img src="https://uploads-ssl.webflow.com/5b0eb11723332d2455b73469/5b913a51b07f22c423841fab_vertical-line.svg" data-w-id="83a5382e-03af-7ed4-eea3-d02e208a3d83" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" alt="" class="x-mark">
+                        <img src="https://uploads-ssl.webflow.com/5b0eb11723332d2455b73469/5b913a118854430d1d59670a_x.svg" data-w-id="905eb075-bfd0-bd13-2bd9-7877be0e3bee" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" alt="" class="vert-small-line">
                 </div>
-            </section>
+            </div> 
+        </div>
 
-            <div class="top-spacer-m">
+         <!-- JOURNEY -->
+         <section class="container space-top">
+            <div class="home-body-label five columns">
+                <h1>I’ve picked up a few things along my journey.</h1>
+                <br>
+                <p>There are a number of ways that I show up and add value, but here is a concise list of the accountabilities that I own in my job in no specific order.</p>
+            </div>
+        </section>
 
-            <section class="container">   
-                <div class="four columns">
+        <!-- SKILLS -->
+        <section class="container">   
+            <div class="stuff">
+                <div class="five columns">
                     <h5>Creating Concepts</h5>
                 </div>
-                <div class="six columns">
+                <div class="home-body-text six columns">
                     <p>Most people believe an app will solve all their problems, but I help stakeholders better understand what they are truly trying to solve. By better defining the problem space, ideas can be generated around key fundamentals to build and iterate upon.</p>
                 </div>
-            </section>
-
-            <div class="top-spacer-s"></div>
-
-            <section class="container"> 
-                <div class="four columns">
+            </div>
+        </section>
+        <section class="container">   
+            <div class="stuff">
+                <div class="five columns">
                     <h5>Visualizing Ideas</h5>
                 </div>
-                <div class="six columns">
+                <div class="home-body-text six columns">
                     <p>People better relate to an idea when it is visualized. Whether they are physical or digital, I bring ideas to life to streamline communication and resolve assumptions. This practice helps everyone understand the story a business is trying to convey.</p>
                 </div>
-            </section>
-            
-            <div class="top-spacer-s"></div>
-
-            <section class="container">    
-                <div class="four columns">
+            </div>
+        </section>
+        <section class="container">   
+            <div class="stuff">
+                <div class="five columns">
                     <h5>Pushing Pixels</h5>
                 </div>
-                <div class="six columns">
+                <div class="home-body-text six columns">
                     <p>My main obsession is creating pixel perfect designs. The User Interface (UI) is the most tangible aspect of a product, which is incredibly hard to translate through words alone. The right UI design keep developers on track and a product building toward success.</p>
                 </div>
-            </section>
-
-            <div class="top-spacer-s"></div>
-
-            <section class="container"> 
-                <div class="four columns">
+            </div>
+        </section>
+        <section class="container">   
+            <div class="stuff">
+                <div class="five columns">
                     <h5>Building Products</h5>
                 </div>
-                <div class="six columns">
+                <div class="home-body-text six columns">
                     <p>Creating products that are useful, useable, and desirable requires a balanced team with an agile mindset. I will jump into grooming the backlog, troubleshooting the CSS, or anywhere in between to ensure a product's success.</p>
                 </div>
-            </section>
-
-            <div class="top-spacer-s">
-
-            <section class="container"> 
-                <div class="four columns">
+            </div>
+        </section>
+        <section class="container">   
+            <div class="stuff">
+                <div class="five columns">
                     <h5>Crafting Solutions</h5>
                 </div>
-                <div class="six columns">
+                <div class="home-body-text six columns">
                     <p>The user experience lies at the heart of all products, and a great experience is rooted in the right solution to an actual problem. After that comes the process of making something simple and easy to use, and I own that responsibility.</p>
                 </div>
-            </section>
-            
-            <div class="top-spacer-s">
-
-            <section class="container">
-                <div class="four columns">
+            </div>
+        </section>
+        <section class="container">   
+            <div class="stuff">
+                <div class="five columns">
                     <h5>Workshop Facilitation</h5>
                 </div>
-                <div class="six columns">
+                <div class="home-body-text six columns">
                     <p>Put me in front of a crowd with an eager desire, and I will do anything and everything I can to empower them. People need ideas and processes articulated in a way that is relatable. I enjoy bridging that gap for others.</p>
                 </div>
-            </section>
-            <!-- Section 2 [end] -->
+            </div>
+        </section>
 
-            <div class="top-spacer-xl"></div>
-        
-            <!-- Section 3 [start] --> 
-            <section class="container">
-                <img class="card-line" src="assets/svg/work-path.svg" alt="">
-                <div class="hero-title five columns offset-by-two">
-                    <h1>Side hustles are cool, here’s what I’m up to.</h1>
-                </div>
+        <!-- SIDE HUSTLES -->
+        <section class="container space-top">
+            <div class="home-body-label six columns">
+                <h1>Side hustles are cool, here’s what I’m up to.</h1>
+            </div>
+        </section>
 
-                <a href="https://medium.com/@acregnery/product-signal-b656d7020ee6" a="" target="_blank">
-                <div class="card case-1 eight columns top-spacer-c offset-by-two">
-                    
-                    <div class="card-container">
-                        <h5>Signal: Making podcast advertisers smarter</h5>
-                        <br>
-                        <p>Podcasts have become a 🔥 spot for advertisers recently. I designed an analytics platform for podcast advertisers as a part of a design challenge to show my process which included research, sketching, and polishing.</p>
-                    </div>
-                    
-                </div>
-                </a>
-
-                <a href="https://medium.com/@acregnery/talk-to-a-local-4060b1286d29" a="" target="_blank">
-                <div class="card case-2 eight columns top-spacer-c offset-by-two">
-                    
-                    <div class="card-container">
-                        <h5>Talk to a Local: Connecting travelers with passionate locals</h5>
-                        <br>
-                        <p>Helping people realize their dreams is a passion of mine. When a colleague shared his vision for his business, I jumped at the opportunity to help that become more tangible by keep things lean and polishing ideas through design.</p>
-                    </div>
-                </div>
-                </a>
-                
-                <a href="https://medium.com/@acregnery/decluttering-medium-f64c5d0746d0" a="" target="_blank">
-                <div class="card case-3 eight columns top-spacer-c offset-by-two">
-                    
-                    <div class="card-container">
-                        <h5>Medium Declutter Tool: Reduce the noise</h5>
-                        <br>
-                        <p>Like the content on Medium, but also don’t like forking over money for a subscription service? There is so much pay wall content taking up precious screen real estate, that I decided to build an extension for Chrome that removes the premium articles from my main page.</p>
-                    </div>
-                    
-                </div>
-                </a>
-            </section>
-            <!-- Section 3 [end] -->
-
-            <div class="top-spacer-xl"></div>
-        
-            <!-- Section 4 [start] -->
-            <section class="container">
-                <div class="hero-title five columns" id="jump">
-                    <h1>Everyone has a story and this is mine.</h1>
-                    <br>
-                    <h2>Shortly after graduating from undergrad at Georgia Tech, my wife and I moved out to Charleston for my job. It’s taken a relentless pursuit of personal reflection and trial-and-error, but I am lucky enough to have found my passion. I have continued to supplement my growth as a Designer by earning an MBA, speaking at conferences, and coaching other aspiring designers. I have had the privilege to work with Pivotal Labs, and set the foundation for the future of UX design.</h2>
-                </div>
-
-                <img class="profile-pic four columns offset-by-one" src="assets/png/profile-img@3x.png">
-            </section>
-
-            <div class="top-spacer-m">
-
-            <section class="container">      
-                <div class="four columns">
-                    <h5>Traveling</h5>
-                </div>
-                <div class="six columns">
-                    <p>A passion my wife and I share together is the love for exploring new places, especially with cultures different from our own. A goal we set for ourselves is to travel somewhere new every year, ideally internationally. This enables us to escape from the daily grind, refresh our hearts and minds, and be inspired. <br><br>
-                    <div class="special sub-text">Follow us <a href="https://www.instagram.com/explore/tags/regneryworldtravels/">#regneryworldtravels</a></div></p>
-                </div>
-            </section>
-
-            <div class="top-spacer-s"></div>
-
-            <section class="container">      
-                <div class="four columns">
-                    <h5>Hobbies</h5>
-                </div>
-                <div class="six columns">
-                    <p>Making cool stuff pays the bills, but I have other interests that make life interesting to me. I wouldn't say this is comprehensive, but it answers the question - "so what do you like to do for fun?"</p><br>
-                    <p class="sub-text">Airbnb Superhost<br>
-                        Charleston Hurricanes Lacrosse<br>
-                        Goldendoodle Dad<br>
-                        Awaken Church Member<br>
-                        Health Nut</p>
-                </div>
-            </section>
-
-            <div class="top-spacer-s"></div>
-
-            <section class="container">  
-                <div class="four columns">
-                    <h5>Goals</h5>
-                </div>
-                <div class="six columns">
-                    <p>I like to breakdown a manageable objective each month. Feel free to ask me how it's going, or hold me accountable to make sure I cross the finish line.</p><br>
-                    <p class="sub-text">
-                            🆕 Sep | 15 hours of drone flights<br>
-                            ✅ Aug | Try 2 new recipes<br>
-                            ✅ July | Read 3 Fiction Novels<br>
-                            ✅ June | Catch all 151 Pokemon in Yellow<br>
-                            ✅ <a style="text-decoration: underline" href="https://github.com/Ignorantelkski/3d-funski">Apr | Build a WebGL experience</a><br>
-                            ✅ Mar | Train for Cooper River Bridge Run 10K<br>
-                            ✅ Feb | Attend 12 Yoga/Barre Classes<br>
-                            ✅ <a style="text-decoration: underline" href="https://chrome.google.com/webstore/detail/medium-declutter-tool/ffojgnipkjaccbnflmknmeonomggpdfb?hl=en-US">Jan | Build a Chrome Extension</a><br>
-                            ✅ <a style="text-decoration: underline" href="https://talktoalocal.io/">Dec | Passion Project</a><br>
-                            ✅ Nov | Train new puppy!<br>
-                            ✅ Oct | 4 Design Blog Posts<br>
-                            ✅ Sep | Deploy Personal Website<br>
-                            ✅ Aug | Inc. Designer Network<br>
-                            ✅ July | Start Airbnb<br>
-                            ✅ June | Run 10 miles straight</p>
-                </div>
-            </section>
-            
-            <!-- Section 4 [end] -->
-        
-            <!-- Section 5 [start] -->
-            <img class="footer-pic" src="assets/svg/setup.svg" alt="🖥"></img>
-            <!-- Section 5 [end] -->
-            
-            <!-- Footer [start] -->
-            <div class="top-spacer-xl footer-spacer">
-                <img class="footer-line" src="assets/svg/footer-path.svg" alt="">
-                <div class="container">
-                    <div class="row">
-        
-                        <div class="hero-title six columns">
-                            <h1>Interested in talking about a design opportunity?</h1>
-                            <br>
-                            <h2 class= "ten columns offset-by-one offset-by-one">You can find me all over the interwebs, but I am most active on Instagram and LinkedIn. Feel free to reach out to me there or you can just <a href="mailto:austin.c.regnery@boeing.com?subject=Design Inquiry&body=Hey Austin! Just saw your site and thought I'd reach out." style="text-decoration:underline">send me a plain old email.</a></h2>
-                        </div>
-        
-                    </div>
-                    <div class="row">
-        
-                        <div class="top-spacer-xl columns" style="text-align: center;">
-                            <a class="scroll-to-top-trigger">Back to top</a>
-                        </div>
-        
-                    </div>
+        <section class="case-studies-section homepage">
+            <div class="cs-bg-div card-1" style="opacity: 1;">
+                <div class="cs-text-block-div">
+                    <img src="./assets/svg/signal.svg" alt="" class="cs-block-brand-logo" width="120">
+                    <div class="cs-block-role boosted-launch">Sr. UX Designer Applicant</div>
+                    <div class="cs-block-title">DESIGN CHALLENGE</div>
+                    <div class="cs-block-description">I researched an emerging problem space and designed a marketing tech application to make advertisers on podcasts smarter.</div>
+                    <a href="https://medium.com/@acregnery/product-signal-b656d7020ee"  class="button-card cs-block w-button">VIEW WRITE-UP</a>
                 </div>
             </div>
-            <!-- Footer [end] -->
+        </section>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="js/my.js"></script>
-        </body>
+        <section class="case-studies-section homepage">
+            <div class="cs-bg-div card-2" style="opacity: 1;">
+                <div class="cs-text-block-div">
+                    <img src="./assets/svg/ttal.svg" alt="" class="cs-block-brand-logo" width="30">
+                    <div class="cs-block-role boosted-launch">Freelance Designer</div>
+                    <div class="cs-block-title">PRODUCT LAUNCH</div>
+                    <div class="cs-block-description">I led design on marketing materials, and mockups to lean out the experience of connecting travelers with passionate locals.</div>
+                    <a href="https://medium.com/@acregnery/talk-to-a-local-4060b1286d29"  class="button-card cs-block w-button">VIEW WRITE-UP</a>
+                    <a href="https://www.talktoalocal.co/"  class="button-card cs-block w-button closer">CHECK OUT TALK TO A LOCAL</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies-section homepage">
+            <div class="cs-bg-div card-3" style="opacity: 1;">
+                <div class="cs-text-block-div">
+                    <img src="./assets/svg/medium.svg" alt="" class="cs-block-brand-logo" width="30">
+                    <div class="cs-block-role">Javascript Noobie</div>
+                    <div class="cs-block-title">DECLUTTER TOOL</div>
+                    <div class="cs-block-description">I built a broswer extension for to removes the paywall content from my main feed on Medium, and to dabble in some javascript.</div>
+                    <a href="https://medium.com/@acregnery/decluttering-medium-f64c5d0746d0"  class="button-card cs-block w-button">VIEW WRITE-UP</a>
+                    <a href="https://chrome.google.com/webstore/detail/ffojgnipkjaccbnflmknmeonomggpdfb/publish-accepted?authuser=0&hl=en-US"  class="button-card cs-block w-button closer">CHROME STORE</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY STORY -->
+        <section class="container space-top ">
+            <div class="home-body-label five columns floater">
+                <h1>Everyone has a story and this is mine.</h1>
+                <br>
+                <p>Shortly after graduating from undergrad at Georgia Tech, my wife and I moved out to Charleston for my job. It’s taken a relentless pursuit of personal reflection and trial-and-error, but I am lucky enough to have found my passion. I have continued to supplement my growth as a Designer by earning an MBA, speaking at conferences, and coaching other aspiring designers. I have had the privilege to work with Pivotal Labs, and set the foundation for the future of UX design.</p>
+            </div>
+
+            <img class="profile-pic four columns" src="assets/png/profile-img@3x.png">
+
+        </section>
+
+        <!-- STETUP -->
+        <img class="setup-pic" src="assets/svg/setup.svg" alt="🖥">
+
+        <!-- FOOTER -->
+        <img class="footer-line space-top" src="assets/svg/footer-path.svg" alt="">
+        <section class="container space-top">
+            <div class="home-body-label seven columns">
+                <h1>Interested in talking about a design opportunity?</h1>
+                <br>
+                <p>You can find me all over the interwebs, but I am most active on Instagram and LinkedIn. Feel free to reach out to me there or you can just <a href="mailto:austin.c.regnery@boeing.com?subject=Design Inquiry&body=Hey Austin! Just saw your site and thought I'd reach out.">send me a plain old email</a>.</p>
+            </div>
+        </section>
+
+        <div class="foot space-top space-bottom">
+            <a class="scroll-to-top-trigger">Back to top</a>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/components/jump.js"></script>
+        <script src="js/components/scroll.js"></script>
+        <script src="js/components/topbar.js"></script>
+    </body>
 </html>
 
 

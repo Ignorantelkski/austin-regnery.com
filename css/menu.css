@@ -1,0 +1,197 @@
+.topbar {
+    display: block;
+    top: 0;
+    padding: 32px 0px;
+  }
+
+.topbar-home-text a{
+    text-decoration: none;
+}
+
+  a:hover {
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+
+/* Cusotm CSS Hamburger Icon */
+.menu-wrap {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 1000;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hamburger line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Top and Bottom Hamburger lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+/* Moves the a line to the bottom */
+.menu-wrap .hamburger > div:after {
+    top: 10px;
+}
+
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top:0;
+    transform: rotate(90deg);
+    background-color: #fff;
+}
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+/* Dropdown menu */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+	overflow-y: scroll;
+    /* complete liquid height based on the parent's height!! */
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 3;
+    background-color: var(--background-color);
+
+    /* only transition on transform properties which are hardware accelerated = way better performances */
+	-webkit-transition:-webkit-transform .3s ease;
+        -moz-transition:   -moz-transform .3s ease;
+         -ms-transition:    -ms-transform .3s ease;
+            transition:        transform .3s ease;
+}
+
+.menu.opened { 
+    /* visible */
+    -webkit-transform: translate(0, -100%);
+       -moz-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+}
+
+.menu.closed { 
+    /* completely offscreen */
+    -webkit-transform: translate(0, 0%);
+       -moz-transform: translate(0, 0%);
+        -ms-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+}
+
+.menu > ul > li {
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.menu > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+SECTIONS
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+section {
+    opacity: 0;
+    transform: translate(0, 20px); 
+    transition: all 2s;
+  }
+  
+  section.visible { 
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+/* Media Queries */
+
+@media all and (min-width: 1600px) {
+    .topbar {
+      width: 1440px;
+      margin: 0px auto;
+    }
+  
+    .menu-wrap {
+      right: calc((100vw - 1440px) / 2);
+    }
+
+    .topbar-home-text a{
+        position: fixed;
+        z-index: 1000;  
+    }
+}
+
+@media all and (max-width: 1200px) {
+  
+    /* .topbar {
+      position: relative;
+      padding: 32px 0px;
+    } */
+  
+    .menu-wrap {
+      /* top: 24px; */
+      right: 24px;
+    }
+
+
+}
