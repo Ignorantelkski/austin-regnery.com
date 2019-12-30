@@ -333,6 +333,10 @@ a:active, a:hover {
         margin-left: 0;  
     }
     .cs-text-block-div { margin-left: 43px; }
+
+    .profile-pic {
+        margin-top: 48px;
+    }
 }
 @media all and (max-width: 767px) {
     .cs-text-block-div { width: 380px; }
@@ -361,6 +365,7 @@ a:active, a:hover {
     .closer{
         margin-top:10px !important;
     }
+
 }
 
 /* Body */
@@ -376,10 +381,7 @@ a:active, a:hover {
     color: var(--text-color-secondary);
 }
 
-/* MY STORY */
-.profile-pic {
-    margin-top: 48px;
-}
+
 
 @media all and (max-width: 1200px) {
     .container {
@@ -448,9 +450,9 @@ a:active, a:hover {
     .floater {
         float:left;
     }
-    .profile-pic {
+    /* .profile-pic {
         margin-left: 248px;
-    }
+    } */
     .setup-pic {
         display: block;
         max-width: 1440px;
