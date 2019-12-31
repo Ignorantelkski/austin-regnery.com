@@ -351,12 +351,23 @@ a:active, a:hover {
         margin-top: 48px;
     }
 }
+
+@media all and (max-width: 800px){
+    .profile-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media all and (max-width: 767px) {
     .cs-text-block-div { width: 380px; }
     .cs-block-title { width: 380px; }
 }
 
 @media all and (max-width: 479px) {
+    body {
+        margin: 0 20px;
+    }
     .cs-block-title {
         width: 250px;
         font-size: 44px;
@@ -381,20 +392,10 @@ a:active, a:hover {
 
 }
 
-/* Body */
-/* .home-body-label{
-    max-width: 600px;
-} */
-
-/* .home-body-label > h1{
-    padding-top: 144px;
-} */
 
 .home-body-text > p {
     color: var(--text-color-secondary);
 }
-
-
 
 @media all and (max-width: 1200px) {
     .container {
@@ -464,7 +465,7 @@ a:active, a:hover {
         float:left;
     }
     .profile-pic {
-        margin-left: 248px;
+        margin-left: 150px;
     }
     .setup-pic {
         display: block;
