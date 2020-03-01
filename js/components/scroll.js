@@ -1,16 +1,13 @@
-//fade on scroll
+const isVisible = (tagPosition, pageBottom) => tagPosition < pageBottom;
+const toggleVisible = pageBottom => tag => {
+    const tagPosition = $(tag).position().top;
+    $(tag).toggleClass("visible", isVisible(tagPosition, pageBottom));
+}
+
 $(document).on("scroll", function () {
-  var pageTop = $(document).scrollTop()
-  var pageBottom = pageTop + $(window).height()
-  var tags = $("section")
+    const pageTop = $(document).scrollTop()
+    const pageBottom = pageTop + $(window).height()
+    var tags = $("section").get()
 
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i]
-
-    if ($(tag).position().top < pageBottom) { 
-      $(tag).addClass("visible")
-    }  else {
-      $(tag).removeClass("visible")
-    }
-  }
+    tags.map(toggleVisible(pageBottom));
 })
